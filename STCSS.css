@@ -1,0 +1,152 @@
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0;
+}
+
+.fullscreen-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.fullscreen-icon:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-decoration: none;
+}
+
+.scroll-box {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.quantity-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+    padding: 4px;
+    background-color: #e8f5e8;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.product-title-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-title-short {
+    font-weight: bold;
+    cursor: help;
+    color: #333;
+    border-bottom: 1px dotted #666;
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 4px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+}
+
+.product-title-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 230px;
+    height: 55px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: left;
+    border-radius: 8px;
+    padding: 12px 16px;
+    position: absolute;
+    z-index: 1001;
+    bottom: auto;
+    left: 50%;
+    margin-left: -150px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    word-wrap: break-word;
+    white-space: normal;
+    font-weight: normal;
+    border: 1px solid #34495e;
+    overflow-y: auto;
+    top: 105%;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #2c3e50 transparent transparent transparent;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .tooltip {
+        width: 250px;
+        margin-left: -125px;
+    }
+}
+
+.price-text {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.filter-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.multiselect-container {
+    margin-bottom: 15px;
+}
+
+.search-timing {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
