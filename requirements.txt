@@ -1,1 +1,7 @@
-py7zr
+streamlit
+pandas
+numpy
+scikit-learn
+rapidfuzz
+faiss-cpu
+sentence-transformers
